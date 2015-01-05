@@ -1,0 +1,26 @@
+
+[user]
+[credential]
+	helper = osxkeychain
+[core]
+	editor = subl -w
+	excludesfile = /Users/aevin/.gitignore
+[alias]
+  d = diff
+  ci = commit
+  p = pull --rebase
+  st = status
+	co = checkout
+  latest = for-each-ref --count=10 --sort=-committerdate refs/heads/  --format='%(committerdate:short) | %(authorname) | %(refname:short)'
+[color]
+	ui = true
+[push]
+	default = simple
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[user]
+[user]
+[user]
+	name = Cory Stephenson
+	email = aevin@me.com

@@ -1,0 +1,23 @@
+# Sublime
+.sublime_project
+.sublime_workspace
+*.sublime-*
+
+# Environment
+.env
+
+# Mac
+.DS_Store
+
+# Ruby
+.rvmrc
+.ruby-gemset
+
+# RSpec
+.rspec-local
+
+# Vagrant
+Vagrantfile
+.vagrant/
+
+Procfile.local

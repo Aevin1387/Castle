@@ -1,0 +1,77 @@
+alias ~="cd ~"
+alias home="cd ~"
+alias ..="cd ../"
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias lst="ls -alh"
+alias etc="cd /etc"
+alias dt='cd ~/Desktop'
+alias dl="cd ~/Downloads"
+alias db='cd ~/Dropbox'
+alias pro='cd ~/Programming'
+alias cpr='cd ~/Programming'
+alias cdev='cd ~/Programming/DevMynd'
+alias tree="tree --dirsfirst -lFC"
+alias less="less -r "
+alias clock='date "+%A %m/%d -%l:%M %p"'
+alias sha1='openssl sha1'
+alias diff="colordiff"
+alias h="history"
+alias sourcit="source ~/.bash_profile"
+alias sourceit="sourcit"
+alias fml='foreman start -f Procfile.local'
+alias my_precious="$EDITOR ~/.secrets"
+
+# Git
+alias ga="git add -p && git add --all"
+alias gap="git add -p"
+alias gc="git commit -m"
+alias gs="git status"
+alias gst="git status"
+alias gdc="git diff --cached"
+alias gd="git diff"
+alias gp="git push"
+
+# Bundler
+alias be="bundle exec "
+
+# Rails
+alias rs="rails server"
+alias rg="rails generate"
+alias rc="rails console"
+alias rdbr="rake db:migrate:reset db:test:prepare"
+alias rreset="rdbr"
+alias rdbm="rake db:migrate db:test:prepare"
+alias migrate="bundle exec rake db:migrate"
+alias prepare="bundle exec rake db:test:prepare"
+alias reseed="bundle exec rake db:migrate:reset db:test:prepare; bundle exec rake db:seed"
+alias trake="RAILS_ENV=test rake"
+alias grate="bundle exec rake db:migrate"
+alias tgrate="bundle exec rake db:test:prepare"
+
+# Rails shortcuts
+# alias guard="guard --no-bundler-warning"
+alias templates="tree app/assets/javascripts/templates"
+alias js="tree app/assets/javascripts"
+alias jsviews="tree app/assets/javascripts/views"
+alias jsmodels="tree app/assets/javascripts/models"
+alias jsvendor="tree app/assets/javascripts/vendor"
+alias css="tree app/assets/stylesheets"
+alias controllers="tree app/controllers"
+alias views="tree app/views"
+alias models="tree app/models"
+
+#RSpec
+alias r='rspec spec'
+alias allspec='SPEC_OPTS="--format Fuubar" RAILS_ENV=test bundle exec rake spec:all'
+
+#Jasmine
+alias jspec='RAILS_ENV=test bundle exec rake spec:javascript'
+
+# Deploy Shortcuts
+alias quick-prod='NO_MAINTENANCE_MODE="true" DEPLOY_WITHOUT_SPECS="true" rake deploy:production'
+alias quick-staging='NO_MAINTENANCE_MODE="true" DEPLOY_WITHOUT_SPECS="true" rake deploy:staging'
+
+# XCode
+alias swift='DEVELOPER_DIR=/Applications/Xcode6-Beta.app/Contents/Developer/ xcrun swift'
+
